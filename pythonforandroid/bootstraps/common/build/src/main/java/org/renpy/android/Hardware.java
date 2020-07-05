@@ -163,25 +163,25 @@ public class Hardware {
         return metrics.densityDpi;
     }
 
-    // /**
-    //  * Show the soft keyboard.
-    //  */
-    // public static void showKeyboard(int input_type) {
-    //     //Log.i("python", "hardware.Java show_keyword  " input_type);
+    /**
+     * Show the soft keyboard.
+     */
+    public static void showKeyboard(int input_type) {
+        //Log.i("python", "hardware.Java show_keyword  " input_type);
 
-    //     InputMethodManager imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
+        InputMethodManager imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
 
-    //     SDLSurfaceView vw = (SDLSurfaceView) view;
+        SDLSurfaceView vw = (SDLSurfaceView) view;
 
-    //     int inputType = input_type;
+        int inputType = input_type;
 
-    //     if (vw.inputType != inputType){
-    //         vw.inputType = inputType;
-    //         imm.restartInput(view);
-    //         }
+        if (vw.inputType != inputType){
+            vw.inputType = inputType;
+            imm.restartInput(view);
+            }
 
-    //     imm.showSoftInput(view, InputMethodManager.SHOW_FORCED);
-    // }
+        imm.showSoftInput(view, InputMethodManager.SHOW_FORCED);
+    }
 
     /**
      * Hide the soft keyboard.
